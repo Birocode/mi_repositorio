@@ -405,7 +405,15 @@ legend {
 
 @media (min-width: 1027px) {
     .Parrafos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         font-size: 1rem;
+    }
+    
+    .parrafoSoporte {
+        margin-right: 15vw;
+        margin-left: 15vw;
     }
 
     .parrafoUno {
@@ -415,6 +423,10 @@ legend {
 
     .sectionUno {
         font-size: 1.5rem;
+    }
+
+    .Leyenda {
+        margin-right: 3rem;
     }
 
     .parrafoDos {
