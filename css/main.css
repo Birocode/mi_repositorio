@@ -193,10 +193,6 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: rgb(37, 37, 37);
-}
-
 /* Final Bars */
 
 /* Descargas */
@@ -359,6 +355,18 @@ legend {
     .yo {
         display: flex;
         justify-content: center;
+    }
+
+    .navbar-toggler{
+        width: 30rem;
+    }
+
+    .mail{
+        font-size: 1.3rem;
+    }
+
+    .duda{
+        font-size: 1rem;
     }
 }
 
