@@ -217,10 +217,23 @@ li a:hover {
     text-align: center;
 }
 
+.chkbox {
+    font-size: 1.5rem;
+}
+
+#checkbox-1{
+    width: 20px;
+    height: 20px;
+}
+
 .checkboxBoton {
     display: flex;
     justify-content: center;
     margin-left: 6.5rem;
+}
+
+legend {
+    margin-top: 2rem;
 }
 
 .Leyenda {
@@ -229,9 +242,8 @@ li a:hover {
 }
 
 .enviarBoton {
-    margin-top: 2rem;
+    margin-bottom: 2rem;
     display: block;
-    margin-left: 2rem;
 }
 
 .submit {
@@ -240,6 +252,7 @@ li a:hover {
     background-color: #333;
     color: white;
     border-radius: 5px;
+    margin-bottom: 2rem;
 }
 
 .submit:hover {
@@ -327,6 +340,10 @@ li a:hover {
         margin-top: 4rem;
     }
 
+    legend {
+        font-size: 1.5rem;
+    }
+
     .soyLeyenda {
         font-size: 1.3rem;
     }
@@ -337,6 +354,10 @@ li a:hover {
 
     h2 {
         font-size: 2rem;
+    }
+
+    .parrafoSoporte {
+        font-size: 1.5rem;
     }
 
     .barraFooter {
