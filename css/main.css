@@ -86,7 +86,7 @@ html {
     font-weight: 600;
 }
 
-.iphoneButton:hover{
+.iphoneButton:hover {
     background-color: rgb(255, 189, 66);
     color: rgb(0, 0, 0);
 }
@@ -104,10 +104,10 @@ html {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
-    
+
 }
 
-.androidButton:hover{
+.androidButton:hover {
     background-color: rgb(255, 189, 66);
     color: rgb(0, 0, 0);
 }
@@ -131,6 +131,10 @@ h4 {
 /*Final Hs */
 
 /* Parrafos */
+
+.yo {
+    font-size: 80px;
+}
 
 .imagenMenu {
     background-image: url(../img/mockup.jpg);
@@ -176,6 +180,16 @@ h4 {
 }
 
 .Parrafos {
+    display: grid;
+    grid-row: auto;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px black;
+    padding: 1rem;
+    font-size: .2rem;
+}
+
+.parrafosIndex {
     display: grid;
     grid-row: auto;
     text-align: center;
@@ -368,7 +382,7 @@ legend {
         margin-top: 1rem;
     }
 
-    .Parrafos {
+    .parrafosIndex {
         margin-top: 19rem;
     }
 
@@ -489,6 +503,10 @@ legend {
         font-size: 1.5rem;
     }
 
+    .parrafosIndex {
+        font-size: 1.5rem;
+    }
+
     .enviarBoton {
         margin-top: 4rem;
     }
@@ -526,6 +544,13 @@ legend {
 
 @media (min-width: 1027px) {
     .Parrafos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .parrafosIndex {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -639,5 +664,9 @@ legend {
         font-size: 54px;
         font-stretch: 100px;
         border-radius: 2px;
+    }
+
+    .yo {
+        font-size: 30px;
     }
 }
