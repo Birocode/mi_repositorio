@@ -583,8 +583,9 @@ legend {
 
     .yo {
         display: block;
+        font-size: 26px;
     }
-    
+
     .menuImagen {
         background-color: white;
         display: block;
@@ -596,14 +597,14 @@ legend {
         margin-left: 55vw;
         margin-top: 5vw;
     }
-    
+
     .descargasMenu {
         font-size: 26px;
         display: flex;
         margin-top: 15px;
         color: rgb(70, 70, 70);
     }
-    
+
     .botonMenu {
         display: flex;
         justify-content: center;
