@@ -143,9 +143,9 @@ h4 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 1.5vw;
-    width: 22vw;
-    height: 5.5vw;
+    margin-top: 30px;
+    width: 236.5rem;
+    height: 6.5rem;
     background-color: rgb(34, 34, 34);
     text-decoration: none;
     color: white;
@@ -323,6 +323,39 @@ legend {
 
 @media (max-width: 600px) {
 
+    .imagenMenu {
+        background-image: url(../img/mockup.jpg);
+        height: 450px;
+        background-position: -120px -70px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        padding-top: 100vw;
+    }
+
+    .menuImagen {
+        background-color: rgb(245, 245, 245);
+        display: flex;
+        flex-direction: column;
+        height: 23.7rem;
+        margin-top: 0%;
+        margin-left: 0vw;
+        width: 100vw;
+    }
+
+    .descargasMenu {
+        margin-top: 1rem;
+    }
+
+    .Parrafos {
+        margin-top: 19rem;
+    }
+
+    .botonMenu {
+        margin-top: 2.5rem;
+        width: 22.5rem;
+    }
+
     nav ul li {
         font-size: 2rem;
     }
@@ -414,6 +447,22 @@ legend {
 }
 
 @media (min-width: 601px) {
+
+    .menuImagen {
+        height: 37.6rem;
+        margin-top: 0%;
+        margin-left: 50vw;
+        width: 45.9vw;
+    }
+
+    .descargasMenu {
+        margin-top: 7rem;
+    }
+
+    .botonMenu {
+        margin-top: 8.60rem;
+        width: 20.5rem;
+    }
 
     .Parrafos {
         font-size: 1.5rem;
@@ -526,5 +575,39 @@ legend {
 
     .yo {
         display: block;
+    }
+    
+    .menuImagen {
+        background-color: white;
+        display: block;
+        text-align: center;
+        font-size: 44px;
+        padding: 2vw;
+        width: 500px;
+        height: 400px;
+        margin-left: 55vw;
+        margin-top: 5vw;
+    }
+    
+    .descargasMenu {
+        font-size: 26px;
+        display: flex;
+        margin-top: 15px;
+        color: rgb(70, 70, 70);
+    }
+    
+    .botonMenu {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 30px;
+        width: 26.5rem;
+        height: 6.5rem;
+        background-color: rgb(34, 34, 34);
+        text-decoration: none;
+        color: white;
+        font-size: 54px;
+        font-stretch: 100px;
+        border-radius: 2px;
     }
 }
