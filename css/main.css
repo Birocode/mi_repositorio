@@ -228,7 +228,7 @@ h4 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    background-image: url(/img/play.png);
+    background-image: url(../img/play.png);
 }
 
 .barraFooter {
