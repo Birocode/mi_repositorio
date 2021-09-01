@@ -479,6 +479,23 @@ legend {
     .duda {
         font-size: 1rem;
     }
+    .botones {
+        flex-direction: column;
+    }
+    .iphoneButton {
+        bottom: -45px;
+    }
+    .androidButton {
+        bottom: -45px;
+    }
+    .imgAndroid {
+        width: 100px;
+        height: 80px;
+    }
+    .imgIphone  {
+        width: 100px;
+        height: 80px;
+    }
 }
 
 @media (min-width: 601px) {
