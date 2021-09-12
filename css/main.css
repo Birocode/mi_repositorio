@@ -1,151 +1,642 @@
 html {
-    font-family: 'Oswald', sans-serif;
-    background-image: url(../img/Damascus.png);
-    text-shadow: 1px 1px 1px white;
-    line-height: 1.6;
+  font-family: "Oswald", sans-serif;
+  background-image: url(../img/Damascus.png);
+  text-shadow: 1px 1px 1px white;
+  line-height: 1.6;
 }
 
 #Name {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 #logo {
-    width: 150px;
-    transition: all 2s;
+  width: 150px;
+  transition: all 2s;
 }
 
 #logo:hover {
-    width: 175px;
+  width: 175px;
 }
 
 /* BEM */
-
 .contenedor {
-    max-width: 900px;
-    width: 90%;
-    margin: 0 auto;
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .tarjeta {
-    background-color: #dfdfdf;
-    border-radius: 15px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-bottom: 50px;
+  background-color: #dfdfdf;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
 }
 
 .imgIphone {
-    width: 200px;
-    height: 120px;
-    margin-right: 30px;
+  width: 200px;
+  height: 120px;
+  margin-right: 30px;
 }
 
 .imgAndroid {
-    width: 200px;
-    height: 120px;
-    margin-right: 30px;
+  width: 200px;
+  height: 120px;
+  margin-right: 30px;
 }
 
 .iPhone {
-    font-size: 2rem;
-    margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .Android {
-    font-size: 2rem;
-    margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .parrafoIphone {
-    line-height: 28px;
-    font-size: 1.2rem;
+  line-height: 28px;
+  font-size: 1.2rem;
 }
 
 .parrafoAndroid {
-    line-height: 28px;
-    font-size: 1.2rem;
+  line-height: 28px;
+  font-size: 1.2rem;
 }
 
 .boton {
-    padding: 20px;
-    background-color: rgb(255, 166, 0);
-    color: rgb(0, 0, 0);
-    display: inline-block;
-    text-decoration: none;
+  padding: 20px;
+  background-color: #ffa600;
+  color: black;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .iphoneButton {
-    position: absolute;
-    border-radius: 10px;
-    right: 20px;
-    bottom: -25px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 600;
+  position: absolute;
+  border-radius: 10px;
+  right: 20px;
+  bottom: -25px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .iphoneButton:hover {
-    background-color: rgb(255, 189, 66);
-    color: rgb(0, 0, 0);
+  background-color: #ffbd42;
+  color: black;
 }
 
 .iphoneButton:active {
-    background-color: #bd7b00;
-    transform: translateY(2px);
+  background-color: #bd7b00;
+  transform: translateY(2px);
 }
 
 .androidButton {
-    position: absolute;
-    border-radius: 10px;
-    right: 20px;
-    bottom: -25px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-
+  position: absolute;
+  border-radius: 10px;
+  right: 20px;
+  bottom: -25px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .androidButton:hover {
-    background-color: rgb(255, 189, 66);
-    color: rgb(0, 0, 0);
+  background-color: #ffbd42;
+  color: black;
 }
 
 .androidButton:active {
-    background-color: #bd7b00;
-    transform: translateY(2px);
+  background-color: #bd7b00;
+  transform: translateY(2px);
 }
 
 /* Hs */
-
 h3 {
-    font-size: 1.75rem;
+  font-size: 1.75rem;
 }
 
 h4 {
-    font-size: 1.5rem;
-    margin: 5px;
+  font-size: 1.5rem;
+  margin: 5px;
 }
 
 /*Final Hs */
-
 /* Parrafos */
-
 .yo {
-    font-size: 80px;
+  font-size: 80px;
 }
 
 .imagenMenu {
-    background-image: url(../img/mockup.jpg);
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
+  background-image: url(../img/mockup.jpg);
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
 }
 
 .menuImagen {
+  background-color: white;
+  display: block;
+  text-align: center;
+  font-size: 44px;
+  padding: 2vw;
+  width: 500px;
+  height: 400px;
+  margin-left: 55vw;
+  margin-top: 5vw;
+}
+
+.descargasMenu {
+  font-size: 26px;
+  display: flex;
+  margin-top: 15px;
+  color: #464646;
+}
+
+.botonMenu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 236.5rem;
+  height: 6.5rem;
+  background-color: #222222;
+  text-decoration: none;
+  color: white;
+  font-size: 54px;
+  font-stretch: 100px;
+  border-radius: 2px;
+}
+
+.Parrafos {
+  display: grid;
+  grid-row: auto;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 0px 10px black;
+  padding: 1rem;
+  font-size: 0.2rem;
+}
+
+.parrafosIndex {
+  display: grid;
+  grid-row: auto;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 0px 10px black;
+  padding: 1rem;
+  font-size: 0.2rem;
+}
+
+.parrafoUno {
+  font-size: 1.35rem;
+}
+
+.parrafoDos {
+  font-size: 1.35rem;
+}
+
+/* Final Parrafos */
+/* Bars */
+.dropdown-menu {
+  padding: 10px;
+}
+
+.dropdown-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.iconoNav {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-image: url(../img/burger.png);
+}
+
+.barraFooter {
+  display: flex;
+  margin-top: 0;
+  margin-left: 0;
+  background-color: #333;
+  justify-content: center;
+  text-align: center;
+}
+
+.barraFooter a:hover {
+  background-color: #222222;
+}
+
+.barraFooter a {
+  padding: 14px 16px;
+  color: #fff;
+  list-style: none;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+}
+
+.barraFooter li {
+  display: flex;
+}
+
+li a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Final Bars */
+/* Descargas */
+.botones {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Final Descargas */
+/* Leyenda */
+.soyLeyenda {
+  width: 332px;
+  display: flex;
+  font-weight: bold;
+  text-align: center;
+}
+
+.chkbox {
+  font-size: 1.5rem;
+}
+
+#checkbox-1 {
+  width: 20px;
+  height: 20px;
+}
+
+.checkboxBoton {
+  display: flex;
+  justify-content: center;
+  margin-left: 6.5rem;
+}
+
+legend {
+  margin-top: 2rem;
+}
+
+.Leyenda {
+  display: flex;
+  justify-content: center;
+}
+
+.enviarBoton {
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.submit {
+  display: flex;
+  padding: 14px 16px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.submit:hover {
+  background-color: #505050;
+}
+
+.submit:active {
+  background-color: #222222;
+}
+
+/* Final Leyenda */
+.preguntaUno {
+  font-size: 1.35rem;
+}
+
+.preguntaDos {
+  font-size: 1.35rem;
+}
+
+.preguntaTres {
+  font-size: 1.35rem;
+}
+
+.preguntaCuatro {
+  font-size: 1.35rem;
+}
+
+@media (max-width: 600px) {
+  .imagenMenu {
+    background-image: url(../img/mockup.jpg);
+    height: 450px;
+    background-position: -120px -70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding-top: 100vw;
+  }
+
+  .menuImagen {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    height: 23.7rem;
+    margin-top: 0%;
+    margin-left: 0vw;
+    width: 100vw;
+  }
+
+  .descargasMenu {
+    margin-top: 1rem;
+  }
+
+  .parrafosIndex {
+    margin-top: 19rem;
+  }
+
+  .botonMenu {
+    margin-top: 2.5rem;
+    width: 22.5rem;
+  }
+
+  nav ul li {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .soyLeyenda {
+    width: 250px;
+    margin-left: 0px;
+  }
+
+  .checkboxBoton {
+    margin-left: 0px;
+  }
+
+  .chkbox {
+    margin-left: 5px;
+  }
+
+  .enviarBoton {
+    display: flex;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  .mail {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 15rem;
+    height: 2rem;
+  }
+
+  .duda {
+    margin-top: 20px;
+    width: 20rem;
+    height: 5rem;
+  }
+
+  .submit {
+    margin-right: 0px;
+  }
+
+  .Leyenda {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .barraFooter {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .yo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-toggler {
+    width: 30rem;
+  }
+
+  .mail {
+    font-size: 1.3rem;
+  }
+
+  .duda {
+    font-size: 1rem;
+  }
+
+  .botones {
+    flex-direction: column;
+  }
+
+  .iphoneButton {
+    bottom: -45px;
+  }
+
+  .androidButton {
+    bottom: -45px;
+  }
+
+  .imgAndroid {
+    width: 100px;
+    height: 80px;
+  }
+
+  .imgIphone {
+    width: 100px;
+    height: 80px;
+  }
+}
+@media (min-width: 601px) {
+  .menuImagen {
+    height: 37.6rem;
+    margin-top: 0%;
+    margin-left: 50vw;
+    width: 45.9vw;
+  }
+
+  .descargasMenu {
+    margin-top: 7rem;
+  }
+
+  .botonMenu {
+    margin-top: 8.6rem;
+    width: 20.5rem;
+  }
+
+  .Parrafos {
+    font-size: 1.5rem;
+  }
+
+  .parrafosIndex {
+    font-size: 1.5rem;
+  }
+
+  .enviarBoton {
+    margin-top: 4rem;
+  }
+
+  legend {
+    font-size: 1.5rem;
+  }
+
+  .soyLeyenda {
+    font-size: 1.3rem;
+  }
+
+  li {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .parrafoSoporte {
+    font-size: 1.5rem;
+  }
+
+  .barraFooter {
+    font-size: 1.5rem;
+    margin: 0px;
+  }
+
+  .yo {
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+  }
+}
+@media (min-width: 1027px) {
+  .Parrafos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+  }
+
+  .parrafosIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+  }
+
+  .parrafoSoporte {
+    margin-right: 15vw;
+    margin-left: 15vw;
+  }
+
+  .parrafoUno {
+    font-size: 1.75rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    width: 75rem;
+    justify-content: center;
+    margin-left: 17.5vw;
+  }
+
+  .sectionUno {
+    font-size: 1.5rem;
+  }
+
+  .Leyenda {
+    margin-right: 3rem;
+  }
+
+  .parrafoDos {
+    font-size: 1.75rem;
+    padding-bottom: 1.5rem;
+    width: 75rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 17.5vw;
+  }
+
+  .sectionDos {
+    font-size: 1.5rem;
+  }
+
+  .descargas {
+    font-size: 2.5rem;
+  }
+
+  .mail {
+    width: 25rem;
+  }
+
+  .duda {
+    width: 30rem;
+    height: 15rem;
+  }
+
+  .queHacemos {
+    padding-bottom: 1.5rem;
+    font-size: 2.5rem;
+  }
+
+  .acerca {
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  li {
+    font-size: 16px;
+  }
+
+  .soyLeyenda {
+    font-size: 1rem;
+  }
+
+  .barraFooter {
+    font-size: 16px;
+  }
+
+  .yo {
+    display: block;
+    font-size: 26px;
+  }
+
+  .menuImagen {
     background-color: white;
     display: block;
     text-align: center;
@@ -155,532 +646,29 @@ h4 {
     height: 400px;
     margin-left: 55vw;
     margin-top: 5vw;
-}
+  }
 
-.descargasMenu {
+  .descargasMenu {
     font-size: 26px;
     display: flex;
     margin-top: 15px;
-    color: rgb(70, 70, 70);
-}
+    color: #464646;
+  }
 
-.botonMenu {
+  .botonMenu {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-top: 30px;
-    width: 236.5rem;
+    width: 26.5rem;
     height: 6.5rem;
-    background-color: rgb(34, 34, 34);
+    background-color: #222222;
     text-decoration: none;
     color: white;
     font-size: 54px;
     font-stretch: 100px;
     border-radius: 2px;
+  }
 }
 
-.Parrafos {
-    display: grid;
-    grid-row: auto;
-    text-align: center;
-    background-color: white;
-    box-shadow: 0px 0px 10px black;
-    padding: 1rem;
-    font-size: .2rem;
-}
-
-.parrafosIndex {
-    display: grid;
-    grid-row: auto;
-    text-align: center;
-    background-color: white;
-    box-shadow: 0px 0px 10px black;
-    padding: 1rem;
-    font-size: .2rem;
-}
-
-.parrafoUno {
-    font-size: 1.35rem;
-}
-
-.parrafoDos {
-    font-size: 1.35rem;
-}
-
-/* Final Parrafos */
-
-/* Bars */
-
-.dropdown-menu {
-    padding: 10px;
-}
-
-.dropdown-item {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.iconoNav {
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    vertical-align: middle;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    background-image: url(../img/burger.png);
-}
-
-.barraFooter {
-    display: flex;
-    margin-top: 0;
-    margin-left: 0;
-    background-color: #333;
-    justify-content: center;
-    text-align: center;
-}
-
-.barraFooter a:hover {
-    background-color: rgb(34, 34, 34);
-}
-
-.barraFooter a {
-    padding: 14px 16px;
-    color: #fff;
-    list-style: none;
-    display: flex;
-}
-
-a {
-    text-decoration: none;
-}
-
-nav {
-    background-color: #333;
-    color: white;
-}
-
-
-.barraFooter li {
-    display: flex
-}
-
-li a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Final Bars */
-
-/* Descargas */
-
-.botones {
-    display: flex;
-    flex-direction: row;
-}
-
-/* Final Descargas */
-
-/* Leyenda */
-
-.soyLeyenda {
-    width: 332px;
-    display: flex;
-    font-weight: bold;
-    text-align: center;
-}
-
-.chkbox {
-    font-size: 1.5rem;
-}
-
-#checkbox-1 {
-    width: 20px;
-    height: 20px;
-}
-
-.checkboxBoton {
-    display: flex;
-    justify-content: center;
-    margin-left: 6.5rem;
-}
-
-legend {
-    margin-top: 2rem;
-}
-
-.Leyenda {
-    display: flex;
-    justify-content: center;
-}
-
-.enviarBoton {
-    margin-bottom: 2rem;
-    display: block;
-}
-
-.submit {
-    display: flex;
-    padding: 14px 16px;
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-    margin-bottom: 2rem;
-}
-
-.submit:hover {
-    background-color: rgb(80, 80, 80);
-}
-
-.submit:active {
-    background-color: rgb(34, 34, 34);
-}
-
-/* Final Leyenda */
-
-.preguntaUno {
-    font-size: 1.35rem;
-}
-
-.preguntaDos {
-    font-size: 1.35rem;
-}
-
-.preguntaTres {
-    font-size: 1.35rem;
-}
-
-.preguntaCuatro {
-    font-size: 1.35rem;
-}
-
-
-@media (max-width: 600px) {
-
-    .imagenMenu {
-        background-image: url(../img/mockup.jpg);
-        height: 450px;
-        background-position: -120px -70px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        padding-top: 100vw;
-    }
-
-    .menuImagen {
-        background-color: rgb(245, 245, 245);
-        display: flex;
-        flex-direction: column;
-        height: 23.7rem;
-        margin-top: 0%;
-        margin-left: 0vw;
-        width: 100vw;
-    }
-
-    .descargasMenu {
-        margin-top: 1rem;
-    }
-
-    .parrafosIndex {
-        margin-top: 19rem;
-    }
-
-    .botonMenu {
-        margin-top: 2.5rem;
-        width: 22.5rem;
-    }
-
-    nav ul li {
-        font-size: 2rem;
-    }
-
-    nav ul {
-        flex-wrap: wrap;
-    }
-
-    p {
-        font-size: 1.5rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    .soyLeyenda {
-        width: 250px;
-        margin-left: 0px;
-    }
-
-    .checkboxBoton {
-        margin-left: 0px;
-    }
-
-    .chkbox {
-        margin-left: 5px;
-    }
-
-    .enviarBoton {
-        display: flex;
-        font-size: 1.5rem;
-        text-align: center;
-        justify-content: center;
-        margin-top: 1.5rem;
-    }
-
-    .mail {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: 15rem;
-        height: 2rem;
-    }
-
-    .duda {
-        margin-top: 20px;
-        width: 20rem;
-        height: 5rem;
-    }
-
-    .submit {
-        margin-right: 0px;
-    }
-
-    .Leyenda {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    header {
-        text-align: center;
-    }
-
-    .barraFooter {
-        display: flex;
-        justify-content: space-around;
-        font-size: 1.2rem;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .yo {
-        display: flex;
-        justify-content: center;
-    }
-
-    .navbar-toggler {
-        width: 30rem;
-    }
-
-    .mail {
-        font-size: 1.3rem;
-    }
-
-    .duda {
-        font-size: 1rem;
-    }
-    .botones {
-        flex-direction: column;
-    }
-    .iphoneButton {
-        bottom: -45px;
-    }
-    .androidButton {
-        bottom: -45px;
-    }
-    .imgAndroid {
-        width: 100px;
-        height: 80px;
-    }
-    .imgIphone  {
-        width: 100px;
-        height: 80px;
-    }
-}
-
-@media (min-width: 601px) {
-
-    .menuImagen {
-        height: 37.6rem;
-        margin-top: 0%;
-        margin-left: 50vw;
-        width: 45.9vw;
-    }
-
-    .descargasMenu {
-        margin-top: 7rem;
-    }
-
-    .botonMenu {
-        margin-top: 8.60rem;
-        width: 20.5rem;
-    }
-
-    .Parrafos {
-        font-size: 1.5rem;
-    }
-
-    .parrafosIndex {
-        font-size: 1.5rem;
-    }
-
-    .enviarBoton {
-        margin-top: 4rem;
-    }
-
-    legend {
-        font-size: 1.5rem;
-    }
-
-    .soyLeyenda {
-        font-size: 1.3rem;
-    }
-
-    li {
-        font-size: 1.5rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    .parrafoSoporte {
-        font-size: 1.5rem;
-    }
-
-    .barraFooter {
-        font-size: 1.5rem;
-        margin: 0px;
-    }
-
-    .yo {
-        display: flex;
-        justify-content: center;
-        font-size: 26px;
-    }
-}
-
-@media (min-width: 1027px) {
-    .Parrafos {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 1rem;
-    }
-
-    .parrafosIndex {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 1rem;
-    }
-
-    .parrafoSoporte {
-        margin-right: 15vw;
-        margin-left: 15vw;
-    }
-
-    .parrafoUno {
-        font-size: 1.75rem;
-        padding-bottom: 1.5rem;
-        display: flex;
-        width: 75rem;
-        justify-content: center;
-        margin-left: 17.5vw;
-    }
-
-    .sectionUno {
-        font-size: 1.5rem;
-    }
-
-    .Leyenda {
-        margin-right: 3rem;
-    }
-
-    .parrafoDos {
-        font-size: 1.75rem;
-        padding-bottom: 1.5rem;
-        width: 75rem;
-        display: flex;
-        justify-content: center;
-        margin-left: 17.5vw;
-    }
-
-    .sectionDos {
-        font-size: 1.5rem;
-    }
-
-    .descargas {
-        font-size: 2.5rem;
-    }
-
-    .mail {
-        width: 25rem;
-    }
-
-    .duda {
-        width: 30rem;
-        height: 15rem;
-    }
-
-    .queHacemos {
-        padding-bottom: 1.5rem;
-        font-size: 2.5rem;
-    }
-
-    .acerca {
-        font-size: 2.5rem;
-        padding-bottom: 1.5rem;
-    }
-
-    li {
-        font-size: 16px;
-    }
-
-    .soyLeyenda {
-        font-size: 1rem;
-    }
-
-    .barraFooter {
-        font-size: 16px;
-    }
-
-    .yo {
-        display: block;
-        font-size: 26px;
-    }
-
-    .menuImagen {
-        background-color: white;
-        display: block;
-        text-align: center;
-        font-size: 44px;
-        padding: 2vw;
-        width: 500px;
-        height: 400px;
-        margin-left: 55vw;
-        margin-top: 5vw;
-    }
-
-    .descargasMenu {
-        font-size: 26px;
-        display: flex;
-        margin-top: 15px;
-        color: rgb(70, 70, 70);
-    }
-
-    .botonMenu {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin-top: 30px;
-        width: 26.5rem;
-        height: 6.5rem;
-        background-color: rgb(34, 34, 34);
-        text-decoration: none;
-        color: white;
-        font-size: 54px;
-        font-stretch: 100px;
-        border-radius: 2px;
-    }
-}
+/*# sourceMappingURL=main.css.map */
