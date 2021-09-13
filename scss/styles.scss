@@ -135,16 +135,20 @@ h4 {
 }
 
 .preguntas {
-    display: grid;
-    grid-row: auto;
+    display: block;
     text-align: center;
-    background-color: white;
-    box-shadow: 0px 0px 10px black;
+    justify-content: center;
     padding: 1rem;
-    font-size: .2rem;
+    width: 80vw;
+    margin-left: 10vw;
 
     p {
-        font-size: 1.35rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
 
@@ -159,6 +163,8 @@ h4 {
 
     .yo {
         font-size: 80px;
+        display: flex;
+        flex-direction: column;
     }
 
     .parrafoUno {
@@ -274,6 +280,16 @@ li a {
 /* Final Bars */
 
 /* Descargas */
+
+.newsletter {
+    text-decoration: none;
+    color: #333;
+    font-weight: 900;
+}
+
+.newsletter:hover {
+    color: rgb(87, 87, 87);
+}
 
 .botones {
     display: flex;
@@ -393,6 +409,20 @@ legend {
     body {
         width: 100%;
 
+        .botones {
+            .contenedor {
+                .tarjeta {
+                    .imgAndroid {
+                        display: none;
+                    }
+
+                    .imgIphone {
+                        display: none;
+                    }
+                }
+            }
+        }
+
         .imagenMenu {
             background-image: url(../img/mockup.jpg);
             height: 650px;
@@ -425,7 +455,7 @@ legend {
         .parrafosIndex {
             margin-top: 19rem;
 
-            .parrafoUno{
+            .parrafoUno {
                 margin-bottom: 2rem;
             }
 
@@ -565,12 +595,12 @@ legend {
         margin-left: 1vw;
     }
 
-    h1{
+    h1 {
         margin-left: 1vw;
     }
 
     .imagenMenu {
-        
+
         width: 100%;
 
         .botonMenu {
@@ -589,7 +619,6 @@ legend {
             }
         }
     }
-
 
     .Parrafos {
         font-size: 1.5rem;
