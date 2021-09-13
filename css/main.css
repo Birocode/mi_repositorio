@@ -15,58 +15,10 @@ html {
 }
 
 #logo:hover {
-  width: 175px;
+  transform: scale(1.5);
 }
 
 /* BEM */
-.contenedor {
-  max-width: 900px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.tarjeta {
-  background-color: #dfdfdf;
-  border-radius: 15px;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin-bottom: 50px;
-}
-
-.imgIphone {
-  width: 200px;
-  height: 120px;
-  margin-right: 30px;
-}
-
-.imgAndroid {
-  width: 200px;
-  height: 120px;
-  margin-right: 30px;
-}
-
-.iPhone {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.Android {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.parrafoIphone {
-  line-height: 28px;
-  font-size: 1.2rem;
-}
-
-.parrafoAndroid {
-  line-height: 28px;
-  font-size: 1.2rem;
-}
-
 .boton {
   padding: 20px;
   background-color: #ffa600;
@@ -127,10 +79,6 @@ h4 {
 
 /*Final Hs */
 /* Parrafos */
-.yo {
-  font-size: 80px;
-}
-
 .imagenMenu {
   background-image: url(../img/mockup.jpg);
   height: 600px;
@@ -174,6 +122,19 @@ h4 {
   border-radius: 2px;
 }
 
+.preguntas {
+  display: grid;
+  grid-row: auto;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 0px 10px black;
+  padding: 1rem;
+  font-size: 0.2rem;
+}
+.preguntas p {
+  font-size: 1.35rem;
+}
+
 .Parrafos {
   display: grid;
   grid-row: auto;
@@ -182,6 +143,21 @@ h4 {
   box-shadow: 0px 0px 10px black;
   padding: 1rem;
   font-size: 0.2rem;
+}
+.Parrafos .yo {
+  font-size: 80px;
+}
+.Parrafos .parrafoUno {
+  font-size: 1.35rem;
+}
+.Parrafos .parrafoDos {
+  font-size: 1.35rem;
+}
+.Parrafos #contactos h3 {
+  font-size: 40px;
+}
+.Parrafos #contactos .yo p {
+  font-size: 30px;
 }
 
 .parrafosIndex {
@@ -193,22 +169,19 @@ h4 {
   padding: 1rem;
   font-size: 0.2rem;
 }
-
-.parrafoUno {
+.parrafosIndex .parrafoUno {
   font-size: 1.35rem;
 }
-
-.parrafoDos {
+.parrafosIndex .parrafoDos {
   font-size: 1.35rem;
 }
 
 /* Final Parrafos */
 /* Bars */
-.dropdown-menu {
+.container-fluid .dropdown-menu {
   padding: 10px;
 }
-
-.dropdown-item {
+.container-fluid .dropdown-item {
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -224,7 +197,7 @@ h4 {
   background-image: url(../img/burger.png);
 }
 
-.barraFooter {
+#pie .barraFooter {
   display: flex;
   margin-top: 0;
   margin-left: 0;
@@ -232,16 +205,16 @@ h4 {
   justify-content: center;
   text-align: center;
 }
-
-.barraFooter a:hover {
+#pie .barraFooter a:hover {
   background-color: #222222;
 }
-
-.barraFooter a {
+#pie .barraFooter a {
+  display: flex;
   padding: 14px 16px;
   color: #fff;
   list-style: none;
   display: flex;
+  text-decoration: none;
 }
 
 a {
@@ -251,10 +224,6 @@ a {
 nav {
   background-color: #333;
   color: white;
-}
-
-.barraFooter li {
-  display: flex;
 }
 
 li a {
@@ -268,6 +237,46 @@ li a {
 .botones {
   display: flex;
   flex-direction: row;
+}
+.botones .contenedor {
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+}
+.botones .contenedor .tarjeta {
+  background-color: #dfdfdf;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+.botones .contenedor .tarjeta .imgIphone {
+  width: 200px;
+  height: 120px;
+  margin-right: 30px;
+}
+.botones .contenedor .tarjeta .imgAndroid {
+  width: 200px;
+  height: 120px;
+  margin-right: 30px;
+}
+.botones .contenedor .tarjeta .iPhone {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.botones .contenedor .tarjeta .Android {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.botones .contenedor .tarjeta .parrafoIphone {
+  line-height: 28px;
+  font-size: 1.2rem;
+}
+.botones .contenedor .tarjeta .parrafoAndroid {
+  line-height: 28px;
+  font-size: 1.2rem;
 }
 
 /* Final Descargas */
@@ -326,181 +335,147 @@ legend {
 }
 
 /* Final Leyenda */
-.preguntaUno {
-  font-size: 1.35rem;
-}
-
-.preguntaDos {
-  font-size: 1.35rem;
-}
-
-.preguntaTres {
-  font-size: 1.35rem;
-}
-
-.preguntaCuatro {
-  font-size: 1.35rem;
-}
-
 @media (max-width: 600px) {
-  .imagenMenu {
+  html {
+    display: flex;
+    width: f;
+  }
+  html body {
+    width: 100vw;
+  }
+  html body .imagenMenu {
     background-image: url(../img/mockup.jpg);
-    height: 450px;
+    height: 650px;
     background-position: -120px -70px;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    padding-top: 100vw;
+    padding-top: 36.2rem;
   }
-
-  .menuImagen {
+  html body .imagenMenu .botonMenu {
+    margin-top: 2.5rem;
+    width: 35.8rem;
+  }
+  html body .imagenMenu .menuImagen {
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     height: 23.7rem;
-    margin-top: 0%;
-    margin-left: 0vw;
+    margin: 0%;
     width: 100vw;
   }
-
-  .descargasMenu {
+  html body .imagenMenu .menuImagen .descargasMenu {
     margin-top: 1rem;
+    width: 35.8rem;
   }
-
-  .parrafosIndex {
+  html body .parrafosIndex {
     margin-top: 19rem;
   }
-
-  .botonMenu {
-    margin-top: 2.5rem;
-    width: 22.5rem;
+  html body .parrafosIndex p {
+    width: 35.5rem;
+    margin: 0%;
   }
-
-  nav ul li {
+  html body nav ul li {
     font-size: 2rem;
   }
-
-  nav ul {
+  html body nav ul {
     flex-wrap: wrap;
   }
-
-  p {
+  html body p {
     font-size: 1.5rem;
   }
-
-  h2 {
+  html body h2 {
     font-size: 2rem;
   }
-
-  .soyLeyenda {
+  html body .soyLeyenda {
     width: 250px;
     margin-left: 0px;
   }
-
-  .checkboxBoton {
+  html body .checkboxBoton {
     margin-left: 0px;
   }
-
-  .chkbox {
+  html body .chkbox {
     margin-left: 5px;
   }
-
-  .enviarBoton {
+  html body .enviarBoton {
     display: flex;
     font-size: 1.5rem;
     text-align: center;
     justify-content: center;
     margin-top: 1.5rem;
   }
-
-  .mail {
+  html body .mail {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 15rem;
     height: 2rem;
   }
-
-  .duda {
+  html body .duda {
     margin-top: 20px;
     width: 20rem;
     height: 5rem;
   }
-
-  .submit {
+  html body .submit {
     margin-right: 0px;
   }
-
-  .Leyenda {
+  html body .Leyenda {
     display: flex;
     flex-direction: column;
   }
-
-  header {
+  html body header {
     text-align: center;
   }
-
-  .barraFooter {
+  html body header .navbar-toggler {
+    width: 40rem;
+  }
+  html body .barraFooter {
     display: flex;
     justify-content: space-around;
     font-size: 1.2rem;
     margin: 0px;
     padding: 0px;
   }
-
-  .yo {
+  html body .yo {
     display: flex;
     justify-content: center;
   }
-
-  .navbar-toggler {
-    width: 30rem;
-  }
-
-  .mail {
+  html body .mail {
     font-size: 1.3rem;
   }
-
-  .duda {
+  html body .duda {
     font-size: 1rem;
   }
-
-  .botones {
+  html body .botones {
     flex-direction: column;
   }
-
-  .iphoneButton {
+  html body .botones .tarjeta .iphoneButton {
     bottom: -45px;
   }
-
-  .androidButton {
+  html body .botones .tarjeta .androidButton {
     bottom: -45px;
   }
-
-  .imgAndroid {
+  html body .botones .tarjeta .imgAndroid {
     width: 100px;
     height: 80px;
   }
-
-  .imgIphone {
+  html body .botones .tarjeta .imgIphone {
     width: 100px;
     height: 80px;
   }
 }
 @media (min-width: 601px) {
-  .menuImagen {
+  .imagenMenu .botonMenu {
+    margin-top: 6.6rem;
+    width: 27.5rem;
+  }
+  .imagenMenu .menuImagen {
     height: 37.6rem;
     margin-top: 0%;
     margin-left: 50vw;
-    width: 45.9vw;
+    width: 50vw;
   }
-
-  .descargasMenu {
+  .imagenMenu .menuImagen .descargasMenu {
     margin-top: 7rem;
-  }
-
-  .botonMenu {
-    margin-top: 8.6rem;
-    width: 20.5rem;
   }
 
   .Parrafos {
@@ -636,26 +611,7 @@ legend {
     font-size: 26px;
   }
 
-  .menuImagen {
-    background-color: white;
-    display: block;
-    text-align: center;
-    font-size: 44px;
-    padding: 2vw;
-    width: 500px;
-    height: 400px;
-    margin-left: 55vw;
-    margin-top: 5vw;
-  }
-
-  .descargasMenu {
-    font-size: 26px;
-    display: flex;
-    margin-top: 15px;
-    color: #464646;
-  }
-
-  .botonMenu {
+  .imagenMenu .botonMenu {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -668,6 +624,23 @@ legend {
     font-size: 54px;
     font-stretch: 100px;
     border-radius: 2px;
+  }
+  .imagenMenu .menuImagen {
+    background-color: white;
+    display: block;
+    text-align: center;
+    font-size: 44px;
+    padding: 2vw;
+    width: 26vw;
+    height: 400px;
+    margin-left: 55vw;
+    margin-top: 5vw;
+  }
+  .imagenMenu .menuImagen .descargasMenu {
+    font-size: 26px;
+    display: flex;
+    margin-top: 15px;
+    color: #464646;
   }
 }
 
