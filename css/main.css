@@ -3,6 +3,11 @@ html {
   background-image: url(../img/Damascus.png);
   text-shadow: 1px 1px 1px white;
   line-height: 1.6;
+  overflow-x: hidden;
+}
+html body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
 }
 
 #Name {
@@ -337,7 +342,7 @@ legend {
 /* Final Leyenda */
 @media (max-width: 600px) {
   body {
-    width: 155.6vw;
+    width: 100%;
   }
   body .imagenMenu {
     background-image: url(../img/mockup.jpg);
@@ -350,7 +355,7 @@ legend {
   }
   body .imagenMenu .botonMenu {
     margin-top: 2.5rem;
-    width: 35.5rem;
+    width: 22.5rem;
   }
   body .imagenMenu .menuImagen {
     background-color: whitesmoke;
@@ -358,17 +363,20 @@ legend {
     flex-direction: column;
     height: 23.7rem;
     margin: 0%;
-    width: 155.6vw;
+    width: 100%;
   }
   body .imagenMenu .menuImagen .descargasMenu {
     margin-top: 1rem;
-    width: 35.8rem;
+    width: 22.5rem;
   }
   body .parrafosIndex {
     margin-top: 19rem;
   }
+  body .parrafosIndex .parrafoUno {
+    margin-bottom: 2rem;
+  }
   body .parrafosIndex p {
-    width: 34.5rem;
+    width: 90vw;
     margin: 0%;
   }
   body nav ul li {
@@ -460,6 +468,17 @@ legend {
   }
 }
 @media (min-width: 601px) {
+  #logo {
+    margin-left: 1vw;
+  }
+
+  h1 {
+    margin-left: 1vw;
+  }
+
+  .imagenMenu {
+    width: 100%;
+  }
   .imagenMenu .botonMenu {
     margin-top: 6.6rem;
     width: 22rem;
