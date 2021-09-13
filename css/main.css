@@ -15,7 +15,7 @@ html {
 }
 
 #logo:hover {
-  transform: scale(1.5);
+  transform: scale(1.25);
 }
 
 /* BEM */
@@ -336,14 +336,10 @@ legend {
 
 /* Final Leyenda */
 @media (max-width: 600px) {
-  html {
-    display: flex;
-    width: f;
+  body {
+    width: 155.6vw;
   }
-  html body {
-    width: 100vw;
-  }
-  html body .imagenMenu {
+  body .imagenMenu {
     background-image: url(../img/mockup.jpg);
     height: 650px;
     background-position: -120px -70px;
@@ -352,113 +348,113 @@ legend {
     display: flex;
     padding-top: 36.2rem;
   }
-  html body .imagenMenu .botonMenu {
+  body .imagenMenu .botonMenu {
     margin-top: 2.5rem;
-    width: 35.8rem;
+    width: 35.5rem;
   }
-  html body .imagenMenu .menuImagen {
+  body .imagenMenu .menuImagen {
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     height: 23.7rem;
     margin: 0%;
-    width: 100vw;
+    width: 155.6vw;
   }
-  html body .imagenMenu .menuImagen .descargasMenu {
+  body .imagenMenu .menuImagen .descargasMenu {
     margin-top: 1rem;
     width: 35.8rem;
   }
-  html body .parrafosIndex {
+  body .parrafosIndex {
     margin-top: 19rem;
   }
-  html body .parrafosIndex p {
-    width: 35.5rem;
+  body .parrafosIndex p {
+    width: 34.5rem;
     margin: 0%;
   }
-  html body nav ul li {
+  body nav ul li {
     font-size: 2rem;
   }
-  html body nav ul {
+  body nav ul {
     flex-wrap: wrap;
   }
-  html body p {
+  body p {
     font-size: 1.5rem;
   }
-  html body h2 {
+  body h2 {
     font-size: 2rem;
   }
-  html body .soyLeyenda {
+  body .soyLeyenda {
     width: 250px;
     margin-left: 0px;
   }
-  html body .checkboxBoton {
+  body .checkboxBoton {
     margin-left: 0px;
   }
-  html body .chkbox {
+  body .chkbox {
     margin-left: 5px;
   }
-  html body .enviarBoton {
+  body .enviarBoton {
     display: flex;
     font-size: 1.5rem;
     text-align: center;
     justify-content: center;
     margin-top: 1.5rem;
   }
-  html body .mail {
+  body .mail {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 15rem;
     height: 2rem;
   }
-  html body .duda {
+  body .duda {
     margin-top: 20px;
     width: 20rem;
     height: 5rem;
   }
-  html body .submit {
+  body .submit {
     margin-right: 0px;
   }
-  html body .Leyenda {
+  body .Leyenda {
     display: flex;
     flex-direction: column;
   }
-  html body header {
+  body header {
     text-align: center;
   }
-  html body header .navbar-toggler {
+  body header .navbar-toggler {
     width: 40rem;
   }
-  html body .barraFooter {
+  body .barraFooter {
     display: flex;
     justify-content: space-around;
     font-size: 1.2rem;
     margin: 0px;
     padding: 0px;
   }
-  html body .yo {
+  body .yo {
     display: flex;
     justify-content: center;
   }
-  html body .mail {
+  body .mail {
     font-size: 1.3rem;
   }
-  html body .duda {
+  body .duda {
     font-size: 1rem;
   }
-  html body .botones {
+  body .botones {
     flex-direction: column;
   }
-  html body .botones .tarjeta .iphoneButton {
+  body .botones .tarjeta .iphoneButton {
     bottom: -45px;
   }
-  html body .botones .tarjeta .androidButton {
+  body .botones .tarjeta .androidButton {
     bottom: -45px;
   }
-  html body .botones .tarjeta .imgAndroid {
+  body .botones .tarjeta .imgAndroid {
     width: 100px;
     height: 80px;
   }
-  html body .botones .tarjeta .imgIphone {
+  body .botones .tarjeta .imgIphone {
     width: 100px;
     height: 80px;
   }
@@ -466,7 +462,7 @@ legend {
 @media (min-width: 601px) {
   .imagenMenu .botonMenu {
     margin-top: 6.6rem;
-    width: 27.5rem;
+    width: 22rem;
   }
   .imagenMenu .menuImagen {
     height: 37.6rem;
@@ -522,6 +518,14 @@ legend {
   }
 }
 @media (min-width: 1027px) {
+  h1 {
+    margin-left: 1vw;
+  }
+
+  #logo {
+    margin-left: 1vw;
+  }
+
   .Parrafos {
     display: flex;
     flex-direction: column;
